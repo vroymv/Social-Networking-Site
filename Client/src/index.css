@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+      @apply box-border list-none p-0 m-0 scroll-smooth;
+    }
+  
+    body {
+      @apply bg-[#000000] text-white min-h-screen font-inter;
+    }
+  }
+
+  @layer utilities {
+    .invisible-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .side-bar-scrollbar::-webkit-scrollbar {
+      width: 5px;
+      margin-right: 1px;
+      background-color: #09090A;
+    }
+
+    .side-bar-scrollbar::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: grey;
+    }
+
+    .message-compose-box {
+      
+      resize: none;
+    }
+
+    .message-compose-box::-webkit-scrollbar {
+      display: none;
+    }
+  }
